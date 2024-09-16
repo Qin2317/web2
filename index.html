@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Image gallery</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <h1>Image gallery</h1>
+    <div id="preview">
+        <img src="image/1.jpg" alt="Image 1" onclick="changeImage('image/1.jpg')">  <!-- 在网页中放置图片并在点击时获取图片的路径传输到该函数中 -->
+        <img src="image/2.jpg" alt="Image 2" onclick="changeImage('image/2.jpg')">
+        <img src="image/3.jpg" alt="Image 3" onclick="changeImage('image/3.jpg')">
+        <img src="image/4.jpg" alt="Image 4" onclick="changeImage('image/4.jpg')">
+        <img src="image/5.jpg" alt="Image 5" onclick="changeImage('image/5.jpg')">
+    </div>
+    <div class="main-img">
+        <img id="displayedImage" src="image/1.jpg" alt="当前显示的图片">
+        <button id="change" onclick="changeLightness()">light</button>
+    </div>                                                                         
+</body>
