@@ -1,0 +1,43 @@
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 20px ;
+    text-align: center;
+}
+
+#preview img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer; /* 鼠标悬停时显示手形光标 */
+}
+
+.main-img img{
+    width: 520px;
+    height: 520px;
+}
+ 
+
+.main-img {
+    position: relative; /* 容器设置为相对定位，用于内部的绝对定位 */
+    display: inline-block; /* 容器内联块级显示，可以调整大小 */
+  }
+
+#change {
+    position: absolute; /* 为按钮设置绝对定位 */
+    top: 0; /* 将按钮放置在图片的顶部 */
+    left: 0; /* 将按钮放置在图片的左侧 */
+    z-index: 10; /* 确保按钮在图片之上 */
+    /* 添加一些样式以美化按钮 */
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: hsla(0, 0%, 100%, 0.084);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+.darken {
+    filter: brightness(0.5); /* 减少亮度，使图片变暗 */
+  }
